@@ -26,5 +26,5 @@ class NetworkMapper @Inject constructor() : EntityMapper<BlogNetworkEntity, Blog
         )
     }
 
-    fun mapFromEntityList(entities: List<BlogNetworkEntity>) = entities.map { mapFromEntity(it) }
+    override fun mapFromEntityList(entities: List<BlogNetworkEntity>) = entities.map { mapFromEntity(it) }
 }
