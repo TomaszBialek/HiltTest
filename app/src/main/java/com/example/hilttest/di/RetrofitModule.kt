@@ -1,10 +1,6 @@
 package com.example.hilttest.di
 
-import com.example.hilttest.model.Blog
-import com.example.hilttest.retrofit.BlogNetworkEntity
 import com.example.hilttest.retrofit.BlogRetrofit
-import com.example.hilttest.retrofit.NetworkMapper
-import com.example.hilttest.util.EntityMapper
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
@@ -18,12 +14,6 @@ import javax.inject.Singleton
 @Module
 @InstallIn(ApplicationComponent::class)
 object RetrofitModule {
-
-//    @Singleton
-//    @Provides
-//    fun provideNetworkMapper(): EntityMapper<BlogNetworkEntity, Blog> {
-//        return NetworkMapper()
-//    }
 
     @Singleton
     @Provides

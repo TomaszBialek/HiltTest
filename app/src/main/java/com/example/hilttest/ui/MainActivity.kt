@@ -2,7 +2,6 @@ package com.example.hilttest.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Message
 import android.view.View
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
