@@ -17,7 +17,7 @@ object RetrofitModule {
 
     @Singleton
     @Provides
-    fun provideGsonBuilder(): Gson{
+    fun provideGsonBuilder(): Gson {
         return GsonBuilder()
             .excludeFieldsWithoutExposeAnnotation()
             .create()
@@ -25,7 +25,7 @@ object RetrofitModule {
 
     @Singleton
     @Provides
-    fun provideRetrofit(gson: Gson): Retrofit.Builder{
+    fun provideRetrofit(gson: Gson): Retrofit.Builder {
         return Retrofit.Builder()
             .baseUrl("https://open-api.xyz/placeholder/")
             .addConverterFactory(GsonConverterFactory.create(gson))

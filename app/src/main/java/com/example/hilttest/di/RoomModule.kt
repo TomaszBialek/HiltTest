@@ -29,7 +29,7 @@ object RoomModule {
 
     @Singleton
     @Provides
-    fun provideBlogDAO(blogDatabase: BlogDatabase): BlogDao{
+    fun provideBlogDAO(blogDatabase: BlogDatabase): BlogDao {
         return blogDatabase.blogDao()
     }
 

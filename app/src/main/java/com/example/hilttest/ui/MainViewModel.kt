@@ -23,13 +23,14 @@ class MainViewModel @ViewModelInject constructor(
 
     fun setStateEvent(mainStateEvent: MainStateEvent) {
         viewModelScope.launch {
-            when(mainStateEvent){
+            when (mainStateEvent) {
                 is MainStateEvent.GetBlogEvents -> {
                     mainRepository.getBlog()
                         .onEach { dataState -> _dataState.value = dataState }
                         .launchIn(viewModelScope)
                 }
-                is MainStateEvent.None -> {}
+                is MainStateEvent.None -> {
+                }
             }
         }
     }

@@ -1,7 +1,7 @@
-package com.example.hilttest
+package com.example.hilttest.ui
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class MyApplication: Application()
+class MyApplication : Application()
